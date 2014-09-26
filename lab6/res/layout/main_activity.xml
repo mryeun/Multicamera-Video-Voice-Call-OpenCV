@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="720" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="330"
+        android:orientation="horizontal"
+        android:weightSum="1280" >
+
+        <SurfaceView
+            android:id="@+id/surface_camera"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="550" />
+
+        <teaonly.droideye.HttpCameraPreview
+            android:id="@+id/sur_1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="550"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/ButtonCallEnd"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:text="통화 종료"
+            android:layout_weight="180" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="330"
+        android:orientation="horizontal"
+        android:weightSum="1280" >
+
+        <teaonly.droideye.HttpCameraPreview
+            android:id="@+id/sur_2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="550"
+            android:visibility="invisible" />
+
+        <teaonly.droideye.HttpCameraPreview
+            android:id="@+id/sur_3"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="550"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvIPAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="60"
+        android:gravity="center" />
+
+</LinearLayout>

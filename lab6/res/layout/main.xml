@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TableLayout01"
+            android:layout_centerHorizontal="true"
+            android:text="세팅에서 서버IP, 닉네임을 입력 후 로그인 버튼을 눌러주세요" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TableLayout01"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:onClick="@string/buttonHandler"
+                android:text="Login" >
+            </Button>
+
+            <Button
+                android:id="@+id/main_Panorama"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:text="Panorama" >
+            </Button>
+        </LinearLayout>
+    </TableLayout>
+
+</RelativeLayout>
