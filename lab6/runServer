@@ -1,3 +1,0 @@
-#!/usr/local/bin/bash
-java -classpath bin/classes edu.purdue.cs252.lab6.serverapp.DirectoryServer
-
